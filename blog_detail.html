@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <!-- font awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <style>
+        .blog {
+            background: #dddddd;
+        }
+
+        .blog .container {
+            background: #ffffff;
+        }
+
+        .nav-logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0
+        }
+
+        .nav-logo:hover {
+            color: #000000;
+        }
+
+        .wp-links {
+            text-decoration: none;
+            color: #ffffff !important;
+            font-weight: bold;
+            margin: 0 15px;
+            height: 50px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        .wp-links:hover {
+            background: #f58634;
+        }
+
+        .wp-nav {
+            padding: 0px 40px;
+            background: #111d5e;
+        }
+
+        .entry-title {
+            font-size: 1.3rem;
+            margin: 0 0 8px;
+            line-height: 1.4;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+            margin-top: 20px;
+        }
+
+        .entry-title a {
+            color: #000000;
+        }
+
+        .widget-title {
+            text-transform: uppercase;
+            border-bottom: 2px solid #111d5e;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 0 15px;
+        }
+
+        .recent-post ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .recent-post li {
+            list-style: none;
+            padding: 4px 0;
+        }
+
+        .recent-post a {
+            color: #555555;
+            padding: 5px 0;
+            font-size: 15px;
+        }
+
+        .apa-category-list a {
+            font-size: 0.625rem;
+            padding: 3px 5px;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-right: 2px;
+            background: #f58634;
+            font-weight: 600;
+        }
+
+        .apa-tag-list-icon {
+            font-size: 0.7rem;
+            padding: 3px 10px;
+            color: #ffffff;
+            background: #f58634;
+        }
+
+        .apa-tag-list-icon svg {
+            position: relative;
+            top: 0px;
+            height: 15px;
+            width: 15px;
+        }
+
+        .apa-tag-list a {
+            font-size: 0.7rem;
+            padding: 3px 7px;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-right: 2px;
+            background: #f58634;
+            font-weight: 600;
+        }
+
+        nav.navigation.post-navigation {
+            padding: 15px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .screen-reader-text {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute !important;
+            width: 1px;
+            word-wrap: normal !important;
+        }
+
+        .post-navigation .nav-links {
+            display: flex;
+        }
+
+        .post-navigation .nav-previous {
+            flex: 1 0 50%;
+        }
+
+        .post-navigation .nav-links a {
+            color: #000000;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .apa-post-nav-next-icon,
+        .apa-post-nav-prev-icon {
+            display: inline-block;
+        }
+
+        .apa-post-nav-prev-icon {
+            float: left;
+        }
+
+        .apa-post-nav-next-icon .apa-svg-icon,
+        .apa-post-nav-prev-icon .apa-svg-icon {
+            width: 1em;
+            height: 1em;
+        }
+
+        .apa-post-nav-prev-icon .apa-svg-icon {
+            margin-right: 5px;
+        }
+
+        .apa-post-nav-next-icon {
+            float: right;
+        }
+
+        .comment-navigation .nav-next,
+        .posts-navigation .nav-next,
+        .post-navigation .nav-next {
+            text-align: end;
+            flex: 1 0 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="blog">
+        <div class="container pt-0 pb-0">
+            <div class="row">
+                <div class="col-lg-12" style="padding: 20px 40px;">
+                    <h1><a href="index.html" class="nav-logo"><img src="image/logo.svg"
+                                style="height:100px ;width:100px;"></a></h1>
+                    <p>Saas Based Delivery App Solutions</p>
+                </div>
+                <div class="col-lg-12 wp-nav">
+                    <nav class="navbar navbar-expand-lg pt-0 pb-0">
+
+                        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"
+                                style="display: flex;align-items: center;justify-content:center"><i class="fas fa-bars"
+                                    style="color:#fff;"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active wp-links" aria-current="page" href="contact.html">Contact
+                                        Us </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link wp-links" href="contact.html">Buy Now</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link wp-links" href="contact.html">Demo</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+            <div class="row" style="padding: 20px 30px;">
+                <div class="col-lg-8">
+                    <div class="apa-category-list"><a href="#" rel="category tag">Food Delivery Solution</a> <a href="#"
+                            rel="category tag">Grocery Delivery Solution</a> <a href="#" rel="category tag">Liquor
+                            Delivery Solution</a> <a href="#" rel="category tag">Meat
+                            Delivery Solution</a> <a href="#" rel="category tag">Medicines Delivery Solution</a> <a
+                            href="#" rel="category tag">Pizza
+                            Delivery Solution</a></div>
+                    <h1 class="entry-title" style="font-size:2rem ;">What are the types of SEO to enhance your organic
+                        traffic?</h1>
+                    <div class="entry-meta">
+                        <a class="url fn n" href="#" style="font-weight: bold;
+                                        color: #222222;">admin</a>
+                        <a href="#" rel="bookmark" style="color: #222222 !important;">- &nbsp;August
+                            24, 2022</time></a>
+                    </div>
+                    <img src="image/blog1.jpg" class="w-100 mt-4 mb-3">
+                    <div class="entry-content">
+
+                        <p>SEO is the abbreviation of search engine optimization that helps to your website rank higher
+                            in organic search engine results. SEO can be making your website more visible to people who
+                            are looking forward to your product or services via search engines.</p>
+
+
+
+                        <p>SEO is part of the main topic of search engine marketing (SEM), a term used to describe all
+                            marketing strategies for search. SEM needs both organic search and paid search. Organic
+                            search traffic comes from people search in a specific keywords or phrase out of the search
+                            engine results. Paid search traffic comes from your website on a search engine by paying for
+                            advertisements so that your website shows up when user types in a specific keyword or
+                            phrase.&nbsp;</p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="apa-tag-list"><span class="apa-tag-list-icon"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="apa-svg-icon apace-tag">
+                                    <path
+                                        d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
+                                    </path>
+                                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                </svg></span> <a href="#" rel="tag">Organic
+                                traffic</a><a href="#" rel="tag">seo
+                                optimization</a><a href="#" rel="tag">seo
+                                types</a><a href="#" rel="tag">wed
+                                development</a></div>
+                    </footer>
+                    <nav class="navigation post-navigation mt-4" aria-label="Posts">
+                        <h2 class="screen-reader-text">Post navigation</h2>
+                        <div class="nav-links">
+                            <div class="nav-previous"><a href="#" rel="prev">
+                                    <div class="apa-post-nav-prev-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="apa-svg-icon apace-arrow-left">
+                                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                                            <polyline points="12 19 5 12 12 5"></polyline>
+                                        </svg></div> <span class="nav-title">Are you ready to launch your meat business
+                                        online with our meat delivery software?</span>
+                                </a></div>
+                            <div class="nav-next"><a href="#" rel="next">
+                                    <div class="apa-post-nav-next-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="apa-svg-icon apace-arrow-right">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg></div> <span class="nav-title">Launch your own on demand Liquor Delivery
+                                        App like drizly</span>
+                                </a></div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="recent-post mt-3">
+                        <h4 class="widget-title">Recent Posts</h4>
+                        <ul>
+                            <li>
+                                <a href="#">How to Start a Personal Online Grocery Delivery Business</a>
+                            </li>
+                            <li>
+                                <a href="#">Top features and benefits of SaaS-based meat delivery software</a>
+                            </li>
+                            <li>
+                                <a href="#">Top 7 profitable online business models to start in 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">Why choose SaaS based food ordering system?</a>
+                            </li>
+                            <li>
+                                <a href="#">7 Features of Saas-based Medicine Delivery Software</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recent-post mt-3">
+                        <h4 class="widget-title">archives</h4>
+                        <ul>
+                            <li>
+                                <a href="#">August 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">June 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">April 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">March 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">December 2021</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background: #000;">
+                <div class="col-lg-12">
+                    <div class="footer" style="    padding: 10px 20px;
+                    color: #fff;">
+                        <div class="apa-owner-copyright">
+                            Copyright © 2022 <a href="index.html" title="Loop">Loop</a>.
+                            <br><u>Trademark Legal Notice</u> : All product names, trademarks and registered trademarks
+                            are
+                            property of their respective owners. All company, product and service names used in this
+                            website
+                            are for identification purposes only. Use of these names,trademarks and brands does not
+                            imply
+                            endorsement
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/js1.js"></script>
+    <script src="js/js2.js"></script>
+    <script src="js/js3.js"></script>
+    <script src="js/js4.js"></script>
+
+</body>
+
+</html>
